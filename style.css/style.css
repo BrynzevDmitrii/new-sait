@@ -3,6 +3,12 @@
     --pink: #F1E4E6;
     --darckpink: #F16D7F;
     --brawn: #474040;
+    --black: #000000;
+    --gray: #5D5D5D;
+    --witepink: #F26376;
+    --witeread: #FF6A6A;
+    --wite: #FBFBFB;
+
 
 }
 body{
@@ -27,6 +33,8 @@ line-height: 19px;
 
 .header {
 background-color:var(--dark-blue);
+
+
 }
 
 .header__navigation {
@@ -132,12 +140,12 @@ background-color:var(--dark-blue);
     margin: 0 0 97px;
 }
 
-.offers__img{
+.offers__img {
     text-align: center;
 
 }
 
-.offers__title{
+.offers__title {
 font-size: 16px;
 font-weight: 400;
 line-height: 19px;
@@ -145,7 +153,7 @@ color: #FFFFFF;
 text-transform: uppercase;
 }
 
-.offers__subtitle{
+.offers__subtitle {
 font-size: 24px;
 font-weight: 700;
 line-height: 29px;
@@ -153,19 +161,84 @@ text-transform: uppercase;
 color: var(--darckpink);
 }
 
-.items-title{
+.items-title {
     margin: 0 0 48px;
     text-align: center;
 }
 
 
-.items__item{
+.items__item {
     background-color: #F8F8F8;
     width: 360px;
 }
 
-.items__contaner{
+.items__contaner {
     display: flex;
     margin: 0 0 30px;
     justify-content: space-between;
+}
+
+.items__title-product {
+font-size: 13px;
+font-weight: 400;
+line-height: 16px;
+color: var(--black);
+text-transform: uppercase;
+margin: 25px 0 0 18px;
+}
+
+.items__subtitle-product {
+    margin: 12px 30px 18px 18px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+    color: var(--gray);
+}
+
+.items__price {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    color: var(--darckpink);
+    margin: 0 0 20px 18px;
+}
+
+.all-product {
+    border: 1px solid var(--witeread);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    padding: 14px 38px;
+    background-color: transparent;
+    color: var(--witepink);
+    margin: 18px 0 95px 465px;
+}
+
+.differences {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #222224;
+    min-height: 341px;
+}
+
+.differences__block {
+    width: 360px;
+    text-align: center;
+}
+
+.differences__title {
+font-size: 20px;
+font-weight: 400;
+line-height: 24px;
+color: var(--wite);
+margin: 23px 0 16px;
+}
+
+.differences__subtitle {
+font-size: 14px;
+font-weight: 300;
+line-height: 17px;
+text-align: center;
+color: var(--wite);
 }
