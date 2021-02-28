@@ -8,6 +8,8 @@
     --witepink: #F26376;
     --witeread: #FF6A6A;
     --wite: #FBFBFB;
+    --blacgrai: #222224;
+
 
 
 }
@@ -241,4 +243,43 @@ font-weight: 300;
 line-height: 17px;
 text-align: center;
 color: var(--wite);
+}
+
+.subscribe{
+    background-image:url(../img/photosubscribe.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.subscribe__women {
+    margin: 86px 0 126px 0;
+    max-width: 18%;
+    text-align: center;
+}
+.subscribe__title-women {
+font-size: 20px;
+font-weight: 400;
+line-height: 24px;
+color:var(--blacgrai)
+}
+.subscribe__seach {
+    margin: 150px 0 156px;
+ 
+}
+
+.subscribe__title {
+font-size: 24px;
+font-weight: 700;
+line-height: 38px;
+color: var(--blacgrai);
+text-transform: uppercase;
+}
+
+.subscribe__subtitle {
+font-size: 18px;
+font-weight: 400;
+line-height: 30px;
 }
