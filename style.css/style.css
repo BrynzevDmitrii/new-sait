@@ -9,6 +9,7 @@
     --witeread: #FF6A6A;
     --wite: #FBFBFB;
     --blacgrai: #222224;
+    --bood:#9F9F9F;
 
 
 
@@ -166,6 +167,24 @@ color: var(--darckpink);
 .items-title {
     margin: 0 0 48px;
     text-align: center;
+    
+
+}
+
+.items__title{
+font-size: 30px;
+font-weight: 400;
+line-height: 36px;
+color: var(--dark-blue);
+
+}
+
+.items__subtitle{
+font-size: 14px;
+font-weight: 400;
+line-height: 17px;
+color: var(--bood);
+
 }
 
 
@@ -173,6 +192,15 @@ color: var(--darckpink);
     background-color: #F8F8F8;
     width: 360px;
 }
+.items__item_img:hover::after {
+    content:"";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 0 10000px rgba(255,255,255,0.4);
+  }
+  
 
 .items__contaner {
     display: flex;
@@ -197,6 +225,18 @@ margin: 25px 0 0 18px;
     color: var(--gray);
 }
 
+
+/*.featured-bascet{
+    display: flex;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    max-width: 138px;
+    max-height: 43px;
+    display: none;
+
+}*/
+
 .items__price {
     font-size: 16px;
     font-weight: 400;
@@ -215,6 +255,23 @@ margin: 25px 0 0 18px;
     color: var(--witepink);
     margin: 18px 0 95px 465px;
 }
+
+.all-product:hover,
+.all-product:focus {
+    background: #F16D7F;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    color: white;
+    cursor: pointer;
+}
+
+.all-product:active{
+    opacity: 0.5 ;
+    
+}
+
+
 
 .differences {
     display: flex;
@@ -282,4 +339,47 @@ text-transform: uppercase;
 font-size: 18px;
 font-weight: 400;
 line-height: 30px;
+}
+
+footer{
+    background: var(--blacgrai);
+}
+
+.footer__block{
+    display: flex;
+    justify-content: space-around;
+    min-height: 79px ;
+    align-items: center;
+
+}
+
+.footer__copyrat{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    color: var(--wite);
+}
+
+.social{
+    display: flex;
+}
+
+.social-buttn__patterns{
+    background: white;
+    margin: 0 7px;
+}
+
+.social-buttn__patterns:hover,
+.social-buttn__patterns:focus {
+    background-color: var(--darckpink);
+    cursor: pointer;
+    fill-opacity: 0,5;
+
+}
+
+.social-buttn__patterns:active{
+    width: 40px;;
+    height: 40px;
+    outline:white solid 2px;
+    opacity: 0.5 ;
 }
