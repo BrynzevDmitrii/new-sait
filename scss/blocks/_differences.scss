@@ -1,0 +1,28 @@
+.differences {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: $blacgrai;
+    min-height: 341px;
+}
+
+.differences__block {
+    width: 360px;
+    text-align: center;
+}
+
+.differences__title {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--wite);
+    margin: 23px 0 16px;
+}
+
+.differences__subtitle {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+    text-align: center;
+    color: $wite;
+}

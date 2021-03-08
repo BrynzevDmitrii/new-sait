@@ -1,0 +1,142 @@
+.registr-form__box1{
+    display: flex;
+    flex-direction: column;
+    margin: 64px 0 11px 230px ;
+
+    .registr-form__title{
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 19px;
+        color: $dark-blue;
+        margin-bottom: 20px;
+
+    }
+    .registr-form__pole{
+        width:360px ;
+        height: 45px;
+        background:$wite_wite;
+        margin-bottom: 20px;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 16px;
+        padding: 10px 0 10px 17px;
+        color: $lightgray;
+
+
+    }
+}
+
+.registr-form__box2{
+    margin-left: 230px;
+    margin-bottom: 33px;
+
+        .radio{
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 13px;
+    color: $black;
+    margin: 0 20px;
+    }
+    
+}
+
+.registr-form__box3{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 11px 230px ;
+
+    .registr-form__title{
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 19px;
+        color: $dark-blue;
+        margin-bottom: 20px;
+
+    }
+    .registr-form__pole{
+        width:360px ;
+        height: 45px;
+        background:$wite_wite;
+        margin-bottom: 20px;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 16px;
+        padding: 10px 0 10px 17px;
+        color: $lightgray;
+        }
+
+        .registr-form__subtitle{
+            font-size: 13px;
+            font-weight: 300;
+            line-height: 16px;
+            width: 78%;
+            color: $lightgray;
+            margin-bottom: 39px;
+        }
+        .registr-form__button{
+            width: 167px;
+            height: 50px;
+            background: $darckpink ;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17px;
+            color: $wite_wite;
+            text-transform: uppercase;
+            padding: 0 10px;
+
+        }
+        .registr-form__button:hover,
+        .registr-form__button:focus{
+            background: $witeread;
+            cursor: pointer;
+        }
+        .registr-form__button:active{
+            border-radius: 10%;
+            width: 170px;
+            height: 55px;
+
+            
+        }
+
+}
+
+.registr-form{
+    display: flex;
+
+}
+
+.loyalty{
+    display: flex;
+    flex-direction: column;
+    &__title{
+        margin: 64px 0 32px;
+        font-size: 24px;;
+        font-weight: 300;
+        line-height: 29px;
+        color: $black;
+    }
+
+    &__subtitle{
+        margin-bottom: 21px;
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 29px;
+        color: $black;
+        width: 50%;
+
+    }
+    &__item{
+        display: flex;
+        flex-direction: column;
+        &_items{
+            margin-bottom: 16px;
+            list-style: url(../../img/check.svg);
+            padding: 0 0 0 23px;
+            font-size: 24px;
+            font-weight: 300;
+            color: $black;
+            }
+    }
+    
+    
+}
