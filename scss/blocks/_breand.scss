@@ -1,0 +1,106 @@
+.brand {
+    display: flex;
+    margin: 0 0 63px;
+
+    .brand__title {  
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 58px;
+        text-transform: capitalize;    
+        }
+    
+        .brand__title-wrapper {
+        background-color: $pink;
+        flex-grow: 1;
+        align-items: center;
+        display: flex;
+        padding: 0 0 0 91px;
+        }
+
+        .brand__subtitle{
+    display: block;
+    font-size: 37px;
+    font-weight: 700;
+    line-height: 44px; 
+        }   
+
+
+        .brand__subtitle-pink{
+    color: $darckpink;
+    }
+
+}
+
+.brand:hover::before{
+    content: "";
+    width: 100%;
+    min-height: 764px;
+    background: rgba(58, 56, 56, 0.86);
+    position: absolute;
+    cursor: pointer;
+    top: 4,3%;
+}
+.brand:hover .brand__menu{
+    display: block;
+    
+}
+.brand__menu{
+    width: 232px;
+    height: 764px;
+    background-color: $wite_wite;
+    z-index: 1;
+    position: relative;
+    display: none;
+    list-style-type: none;
+}
+
+
+.mame_menu{
+font-size: 14px;
+font-weight: 400;
+line-height: 17px;
+color: $darckpink;
+text-transform: uppercase;
+}
+
+.mame_menu:focus,
+.mame_menu:hover{
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+.menu_item-brand__subitem{
+font-size: 14px;
+font-weight: 400;
+line-height: 17px;
+color:  $yellow-green;
+}
+
+.menu_item-brand__subitem:hover,
+.menu_item-brand__subitem:focus{
+    font-size: 16px;
+}
+.menuli{
+    padding: 12px 0 1px 54px;
+}
+
+.brand__menu_menu_item-brand{
+    margin: 20px 0 0 33px;
+    list-style-type: none;
+}
+.img-menu{
+    position: absolute;
+    margin-left: 203px;
+    margin-top: 10px;
+}
+.menu-h1{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    position: relative;
+    margin: 37px 0 0 34px;
+    text-transform: uppercase;
+    color: $black;
+}
