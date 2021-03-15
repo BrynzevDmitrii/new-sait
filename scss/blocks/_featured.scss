@@ -19,9 +19,7 @@
 }
 
 .featured-bascet__subtext {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 17px;
+    @include font(14px,);
     color:$wite_wite;
     position: absolute;
     right: 10px;

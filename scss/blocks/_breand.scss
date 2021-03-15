@@ -1,32 +1,71 @@
 .brand {
     display: flex;
     margin: 0 0 63px;
+    @include mobile{
+        min-height: 363px;
+    }
 
-    .brand__title {  
-        font-size: 48px;
-        font-style: normal;
-        font-weight: 900;
-        line-height: 58px;
-        text-transform: capitalize;    
-        }
     
-        .brand__title-wrapper {
+    @include tablet{
+        margin: 0 0 19px;
+    }
+    &__man{
+        width: 50%;
+        height: auto;
+        &:before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color:$darckpink;
+            left: -20px;
+        }
+
+        @include mobile{
+            display: none;
+        }
+    }
+
+    &__title {  
+        
+        @include font(48px, 58px, 900px,57px);
+        text-transform: capitalize;  
+        
+        @include tablet{
+            @include font(44px, 50px, 900px, 53px);
+        }
+        @include mobile{
+            @include font(38px, 45px, 900px, 45px);
+        }
+        
+    }
+    
+        
+    
+    &__title-wrapper {
         background-color: $pink;
         flex-grow: 1;
         align-items: center;
         display: flex;
         padding: 0 0 0 91px;
-        }
+    }
 
-        .brand__subtitle{
-    display: block;
-    font-size: 37px;
-    font-weight: 700;
-    line-height: 44px; 
+    &__subtitle{
+        display: block;
+        font-size: 37px;
+        font-weight: 700;
+        line-height: 44px; 
+        @include tablet{
+            @include font(24px, 28px, 700px);
+        }
+        @include mobile{
+            @include font(20px, 24px, 700px);
+        }
+        
         }   
 
 
-        .brand__subtitle-pink{
+    &__subtitle-pink{
     color: $darckpink;
     }
 
@@ -35,7 +74,7 @@
 .brand:hover::before{
     content: "";
     width: 100%;
-    min-height: 764px;
+    height:100%;
     background: rgba(58, 56, 56, 0.86);
     position: absolute;
     cursor: pointer;
@@ -47,7 +86,7 @@
 }
 .brand__menu{
     width: 232px;
-    height: 764px;
+    height: 100%;
     background-color: $wite_wite;
     z-index: 1;
     position: relative;
@@ -57,25 +96,19 @@
 
 
 .mame_menu{
-font-size: 14px;
-font-weight: 400;
-line-height: 17px;
+@include font(14px,17px,);
 color: $darckpink;
 text-transform: uppercase;
 }
 
 .mame_menu:focus,
 .mame_menu:hover{
-    font-size: 16px;
-    font-weight: 400;
-
+    @include font(16px, 17px, );
 }
 
 .menu_item-brand__subitem{
-font-size: 14px;
-font-weight: 400;
-line-height: 17px;
-color:  $yellow-green;
+    @include font(14px,17px);
+    color:  $yellow-green;
 }
 
 .menu_item-brand__subitem:hover,
@@ -96,9 +129,7 @@ color:  $yellow-green;
     margin-top: 10px;
 }
 .menu-h1{
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 17px;
+    @include font(14px, 17px, 700);
     position: relative;
     margin: 37px 0 0 34px;
     text-transform: uppercase;

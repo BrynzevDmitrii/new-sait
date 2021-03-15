@@ -12,17 +12,24 @@
 }
 
 .differences__title {
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24px;
-    color: var(--wite);
+    @include font(20px, 24px);
+    color:#FBFBFB;
     margin: 23px 0 16px;
 }
 
 .differences__subtitle {
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 17px;
+    @include font(14px, 17px, 300);
     text-align: center;
     color: $wite;
+}
+@media(max-width:768px){
+    .differences{
+        flex-direction: column;
+    }
+    .differences__block{
+        margin: 0 0 50px;
+    }
+    .differences__block--delivery{
+        margin-top: 50px;
+    }
 }
