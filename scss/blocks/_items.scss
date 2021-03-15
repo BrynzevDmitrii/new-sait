@@ -16,51 +16,63 @@ color: $dark-blue;
     line-height: 17px;
     color: $bood;
 }
-.items__contaner {
+.items__list {
     display: flex;
     margin: 0 0 30px;
     justify-content: space-between;
+    flex-wrap: wrap;
+    @include mobile{
+        margin: 0 16px 0 16px;
+    }
 }
 
 .items__title-product {
 font-size: 13px;
 font-weight: 400;
 line-height: 16px;
-color: var(--black);
+color: $black;
 text-transform: uppercase;
 margin: 25px 0 0 18px;
 }
 
 .items__item {
-    background-color: #F8F8F8;
-    width: 360px;
+    background-color:$wite;
+    width: 30%;
     position: relative;
-    
+    list-style-type: none;
+    margin: 0 0 3%;
+    @include tablet{
+        width: 49%;
+    }
+    @include mobile{
+        width: auto;
+    }
 }
-.items__item-blok:hover .featured-bascet {
+
+.items__item-img{
+    width: 100%;
+}
+
+.items__item:hover .featured-bascet {
     display: block;
     z-index: 1;
 }
 .items__subtitle-product {
     margin: 12px 30px 18px 18px;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 17px;
+    @include font(14px, $wild:300);
     color: $gray;
 }
 
 .items__price {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19px;
+    @include font(16px, $line: 19px);
     color: $darckpink;
     margin: 0 0 20px 18px;
 }
 
-.items__item-blok:hover::after{
+.items__item:hover:after{
     content: '';
     width: 100%;
-    min-height: 420px;
+    min-height: 100%;
     background: rgba(58, 56, 56, 0.86);
     position: absolute;
     top: 0;
@@ -69,21 +81,23 @@ margin: 25px 0 0 18px;
 
 .all-product {
     border: 1px solid $witeread;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19px;
-    padding: 14px 38px;
+    @include font(16px, $line: 19px);
+    padding: 2% 3%;
     background-color: transparent;
     color: $witepink;
     margin: 18px 0 95px 465px;
+    @include tablet{
+        margin: 18px 0 95px 279px;
+    }
+    @include mobile{
+        margin: 41px 0 96px 75px;
+    }
 }
 
 .all-product:hover,
 .all-product:focus {
-    background: #F16D7F;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19px;
+    background: $darckpink;
+    @include font(16px, $line: 19px);
     color: $wite_wite;
     cursor: pointer;
 }
@@ -92,3 +106,4 @@ margin: 25px 0 0 18px;
     opacity: 0.5 ;
     
 }
+

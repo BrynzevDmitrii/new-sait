@@ -11,9 +11,7 @@ footer{
 }
 
 .footer__copyrat{
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19px;
+    @include font(22px, 23px);
     color: $wite;
 }
 
@@ -35,8 +33,13 @@ footer{
 }
 
 .social-buttn__patterns:active{
-    width: 40px;;
-    height: 40px;
+    @include size(40px, 40px);
     outline:$wite solid 2px;
     opacity: 0.5 ;
+}
+
+.footer__copyrat{
+    @include font(16px, $line:19px);
+    border-radius: nullpx;
+
 }

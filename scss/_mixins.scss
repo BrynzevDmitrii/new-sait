@@ -1,0 +1,26 @@
+@mixin font($size, $height:17px, $wild:400, $line:17px, $style: normal)
+{
+font-size: $size;
+font-weight: $wild;
+line-height: $height;
+font-style: $style;
+line-height:$line
+}
+
+@mixin size($wh, $ht) 
+{
+    width: $wh;
+    height: $ht;
+}
+
+@mixin tablet {
+    @media (max-width: $tablet) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: $mobile) {
+        @content;
+    }
+}

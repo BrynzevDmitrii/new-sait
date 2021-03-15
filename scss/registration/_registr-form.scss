@@ -1,7 +1,20 @@
+.registr-form{
+    display: flex;
+    @include mobile{
+        flex-direction: column;
+    }
+}
+
 .registr-form__box1{
     display: flex;
     flex-direction: column;
     margin: 64px 0 11px 230px ;
+    @include tablet{
+        margin: 40px 22px 30px 0 ;
+    }
+    @include mobile{
+        margin: 0 auto;
+    }
 
     .registr-form__title{
         font-size: 16px;
@@ -9,6 +22,9 @@
         line-height: 19px;
         color: $dark-blue;
         margin-bottom: 20px;
+        @include mobile{
+            margin-top: 40px;
+        }
 
     }
     .registr-form__pole{
@@ -21,6 +37,10 @@
         line-height: 16px;
         padding: 10px 0 10px 17px;
         color: $lightgray;
+        @include mobile{
+            width: 93%;
+        }
+
 
 
     }
@@ -29,6 +49,10 @@
 .registr-form__box2{
     margin-left: 230px;
     margin-bottom: 33px;
+    @include tablet{
+        margin: 0 0 0 1px;
+        display: flex;
+    }
 
         .radio{
     font-size: 11px;
@@ -36,14 +60,30 @@
     line-height: 13px;
     color: $black;
     margin: 0 20px;
+    @include tablet{
+        margin: 0 10px 33px 0;
+        }
     }
     
+}
+
+.radio-none{
+    display: none;
+    @include tablet{
+        display: block;
+    }
 }
 
 .registr-form__box3{
     display: flex;
     flex-direction: column;
     margin: 0 0 11px 230px ;
+    @include tablet{
+        margin: 0 0 11px 0;
+    }
+    @include mobile{
+        margin: 0 auto;
+    }
 
     .registr-form__title{
         font-size: 16px;
@@ -51,8 +91,13 @@
         line-height: 19px;
         color: $dark-blue;
         margin-bottom: 20px;
+        @include tablet{
+            margin: 0 0 11px 10px ;
+            width: auto;
+        }
 
     }
+
     .registr-form__pole{
         width:360px ;
         height: 45px;
@@ -63,6 +108,10 @@
         line-height: 16px;
         padding: 10px 0 10px 17px;
         color: $lightgray;
+        @include mobile{
+            width: 93%;
+        }
+    
         }
 
         .registr-form__subtitle{
@@ -94,49 +143,58 @@
             border-radius: 10%;
             width: 170px;
             height: 55px;
-
-            
         }
 
 }
 
-.registr-form{
-    display: flex;
-
+.loyalty{
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 0 153px;
+            @include tablet{
+                margin: 0 0 0 53px;
+            }
+            @include mobile{
+                margin: 0 0 100px 0;
+            }
+        }
+        
+        
+.loyalty__title{
+    margin: 64px 0 32px;
+    font-size: 24px;;
+    font-weight: 300;
+    line-height: 29px;
+    color: $black;
+    @include tablet{
+        @include font(16px, $line:19px );
+        }
 }
 
-.loyalty{
-    display: flex;
-    flex-direction: column;
-    &__title{
-        margin: 64px 0 32px;
-        font-size: 24px;;
-        font-weight: 300;
-        line-height: 29px;
-        color: $black;
-    }
-
-    &__subtitle{
+.loyalty__subtitle{
         margin-bottom: 21px;
         font-size: 24px;
         font-weight: 300;
         line-height: 29px;
         color: $black;
-        width: 50%;
-
-    }
-    &__item{
-        display: flex;
-        flex-direction: column;
-        &_items{
-            margin-bottom: 16px;
-            list-style: url(../../img/check.svg);
-            padding: 0 0 0 23px;
-            font-size: 24px;
-            font-weight: 300;
-            color: $black;
-            }
-    }
-    
-    
+        @include tablet{
+            @include font(16px, $line:19px );
+        }
 }
+
+.loyalty__item{
+            display: flex;
+            flex-direction: column;
+            @include tablet{
+                @include font(16px,$wild: 300 ,$line:19px );
+            }
+            
+}
+.loyalty__item_items{
+    margin-bottom: 16px;
+    list-style: url(../../img/check.svg);
+    padding: 0 0 0 23px;
+    font-size: 24px;
+    font-weight: 300;
+    color: $black;
+    }

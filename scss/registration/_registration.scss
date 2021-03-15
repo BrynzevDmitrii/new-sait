@@ -10,4 +10,12 @@
     text-transform: uppercase;
     color: $rosered;
     padding:60px 0 0 230px;
+
+    @include tablet{
+        padding: 60px 0 0 16px;
+    }
+    
+    @include mobile{
+        padding: 0 auto;
+    }
 }

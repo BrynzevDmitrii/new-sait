@@ -17,8 +17,15 @@
         background-color: transparent;
         border: none;
         margin: 0 34px 0 0;
+        @include mobile{
+            margin: 0 0 0 0 ;
+        }
+    
+
+        
     
     }
+    
     
     .header__logo {
         margin: 0 10px 0 0;
@@ -26,15 +33,16 @@
     }
 
     .header__logo:hover {
-        cursor: pointer;;
-        width: 47px;
-        height: 40px;
-
+        cursor: pointer;
+        @include size (47px, 40px);
     }
     
     .header__person-link {
         margin: 0 34px 0 0;
-        
+        @include mobile{
+            display: none;
+        }
+    
     }
 
     .header__person-link:hover {
@@ -42,4 +50,20 @@
         height: 32px;
         fill: $darckpink;
     }
+}
+
+.user_img{
+    @include mobile{
+            display: none;
+        }
+    
+}
+
+.bascet_img{
+    @include mobile{
+            display: none;
+        }
+    
+
+
 }
