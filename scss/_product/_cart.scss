@@ -1,0 +1,29 @@
+.cart{
+    margin-top: 701px;
+}
+
+.card-title{
+    color: $darckpink;
+}
+
+.card-subtitle{
+@include font(18px,$wild:300, $line:22px);
+
+}
+
+.card-text{
+    @include font(18, 17, 300,$line:22px);
+    height: 51px;
+    width: 50%;
+}
+
+.cena{
+    color: $darckpink;
+}
+
+.butn{
+    margin-top: 130px;
+    display: flex;
+    margin-left : 371px; 
+}
+

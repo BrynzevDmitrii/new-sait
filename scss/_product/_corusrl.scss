@@ -1,0 +1,21 @@
+.d-block{
+    width: 600px;
+    height: 724px;
+}
+
+.back{
+    background-color: $gray;
+    margin: 0 auto;
+    margin-left: 0;
+}
+
+.next{
+    background-color: $gray;
+    margin: 0 auto;
+    margin-right: 0;
+}
+
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+    display: block;
+    background-color:#F7F7F7;
+}
