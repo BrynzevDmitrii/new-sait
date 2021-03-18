@@ -862,6 +862,8 @@ footer {
   height: 148px;
   width: 100%;
   background: #F8F3F4;
+  display: flex;
+  justify-content: space-around;
 }
 
 .registrtions__preive {
@@ -1141,5 +1143,63 @@ footer {
   font-size: 24px;
   font-weight: 300;
   color: #000000;
+}
+
+.d-block {
+  width: 600px;
+  height: 724px;
+}
+
+.back {
+  background-color: #5D5D5D;
+  margin: 0 auto;
+  margin-left: 0;
+}
+
+.next {
+  background-color: #5D5D5D;
+  margin: 0 auto;
+  margin-right: 0;
+}
+
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+  display: block;
+  background-color: #F7F7F7;
+}
+
+.cart {
+  margin-top: 701px;
+}
+
+.card-title {
+  color: #F16D7F;
+}
+
+.card-subtitle {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 17px;
+  font-style: normal;
+  line-height: 22px;
+}
+
+.card-text {
+  font-size: 18;
+  font-weight: 300;
+  line-height: 17;
+  font-style: normal;
+  line-height: 22px;
+  height: 51px;
+  width: 50%;
+}
+
+.cena {
+  color: #F16D7F;
+}
+
+.butn {
+  margin-top: 130px;
+  display: flex;
+  margin-left: 371px;
 }
 /*# sourceMappingURL=style.css.map */
