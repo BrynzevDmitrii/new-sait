@@ -85,12 +85,12 @@ margin: 25px 0 0 18px;
     padding: 2% 3%;
     background-color: transparent;
     color: $witepink;
-    margin: 18px 0 95px 465px;
+    margin: 18px 0 95px 0;
     @include tablet{
-        margin: 18px 0 95px 279px;
+        margin: 18px 0 95px 0;
     }
     @include mobile{
-        margin: 41px 0 96px 75px;
+        margin: 41px 0 96px 0;
     }
 }
 
@@ -103,7 +103,15 @@ margin: 25px 0 0 18px;
 }
 
 .all-product:active{
-    opacity: 0.5 ;
+    transform: border-radius 300ms;
+    border-radius: 20%;
+    transform: scale(1.1);
     
+    
+}
+.all{
+    display: flex;
+    justify-content: center;
+
 }
 

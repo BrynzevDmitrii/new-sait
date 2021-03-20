@@ -26,7 +26,17 @@
     bottom: 14px;
 }
 
+.featured-bascet:hover{
+    transition-property: background-color;
+    transition-duration: 2s;
+    background-color: $rosered;
+}
 
+.featured-bascet:active{
+    transform:translate(-50%, -50%) rotate(720deg);
+    transition: 2000ms;
+    fill-opacity: 0,5;;
+}
 
 
 

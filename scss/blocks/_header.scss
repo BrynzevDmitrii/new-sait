@@ -52,14 +52,14 @@
     }
 }
 
-.user_img{
+.header__person__user-img{
     @include mobile{
             display: none;
         }
     
 }
 
-.bascet_img{
+.header__bascet-img{
     @include mobile{
             display: none;
         }
