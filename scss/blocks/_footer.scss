@@ -2,7 +2,7 @@ footer{
     background: $blacgrai;
 }
 
-.footer__block{
+.footer-block{
     display: flex;
     justify-content: space-around;
     min-height: 79px ;
@@ -28,17 +28,22 @@ footer{
 .social-buttn__patterns:focus {
     background-color: $darckpink;
     cursor: pointer;
+    transform: rotate(720deg);
+    transition: 2000ms;
     fill-opacity: 0,5;
+
 
 }
 
 .social-buttn__patterns:active{
-    @include size(40px, 40px);
-    outline:$wite solid 2px;
     opacity: 0.5 ;
+    transition: 300ms;
+    transition: border-radius 500ms;
+    transform: scale(1.1) ;
+    border-radius: 10px;
 }
 
-.footer__copyrat{
+.footer-block__copyrat{
     @include font(16px, $line:19px);
     border-radius: nullpx;
 

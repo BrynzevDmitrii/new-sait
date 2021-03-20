@@ -84,11 +84,14 @@
     color: $dark-blue;
     opacity: 0,5;
     cursor: pointer;
+
 }
 
 .subscribe__type:active{
-    @include size(105px, 55px);
-    border-radius: 20%;
+    transform: scale(1.05);
+    transform: border-radius 500ms;
+    border-radius:0 20% 20% 0;
+    border: none;
     cursor: pointer;
 }
 

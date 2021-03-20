@@ -74,7 +74,7 @@
 .brand:hover::before{
     content: "";
     width: 100%;
-    height:100%;
+    height:100vh;
     background: rgba(58, 56, 56, 0.86);
     position: absolute;
     cursor: pointer;
@@ -106,7 +106,7 @@ text-transform: uppercase;
     @include font(16px, 17px, );
 }
 
-.menu_item-brand__subitem{
+.menuli__item-brand__subitem{
     @include font(14px,17px);
     color:  $yellow-green;
 }
@@ -119,7 +119,7 @@ text-transform: uppercase;
     padding: 12px 0 1px 54px;
 }
 
-.brand__menu_menu_item-brand{
+.brand__menu-menu-item-brand{
     margin: 20px 0 0 33px;
     list-style-type: none;
 }
