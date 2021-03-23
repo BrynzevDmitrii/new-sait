@@ -1,0 +1,28 @@
+ul.grid-items__list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 25px;
+    grid-row-gap: 30px;
+    list-style-type: none;
+}
+
+
+
+.grid-items__item:hover .featured-bascet {
+    display: block;
+    z-index: 1;
+}
+
+.items__item--grid{
+    background-color:$wite;
+    width: 100%;
+    position: relative;
+    list-style-type: none;
+    margin: 0 0 3%;
+    @include tablet{
+        width: 49%;
+    }
+    @include mobile{
+        width: auto;
+    }
+}

@@ -1,7 +1,3 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -886,7 +882,12 @@ footer {
   width: 100%;
   background: #F8F3F4;
   display: flex;
-  justify-content: space-around;
+}
+
+@media (max-width: 375px) {
+  .registrtions {
+    flex-direction: column;
+  }
 }
 
 .registrtions__preive {
@@ -895,12 +896,13 @@ footer {
   line-height: 29px;
   text-transform: uppercase;
   color: #F16D7F;
-  padding: 60px 0 0 230px;
+  padding: 60px 0 0 130px;
 }
 
 @media (max-width: 768px) {
   .registrtions__preive {
     padding: 60px 0 0 16px;
+    justify-content: space-between;
   }
 }
 
@@ -1224,5 +1226,199 @@ footer {
   margin-top: 130px;
   display: flex;
   margin-left: 371px;
+}
+
+.title_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter__filrt {
+  display: flex;
+  margin-top: 50px;
+}
+
+.filter-button:hover .accordion {
+  display: block;
+  scroll-snap-type: none;
+  position: absolute;
+  margin-top: 65px;
+  z-index: 1;
+}
+
+.flter__title {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17px;
+  font-style: normal;
+  line-height: 17px;
+  color: #000000;
+  text-transform: uppercase;
+  margin-right: 11px;
+}
+
+@media (max-width: 375px) {
+  .flter__title {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .filter__img {
+    width: 300%;
+    height: 220%;
+  }
+}
+
+.accordion {
+  display: none;
+}
+
+.accordion-button {
+  color: #F16D7F;
+}
+
+.filter__items {
+  margin-bottom: 10px;
+  padding: 5px;
+  font-size: 14;
+  font-weight: 400;
+  line-height: 17px;
+  font-style: normal;
+  line-height: 17px;
+  color: #5D5D5D;
+  text-decoration-line: none;
+}
+
+.filter__items:hover {
+  color: #F16D7F;
+  transform: scale(1.1);
+}
+
+.filter__items--border:active {
+  border: 1px solid #000000;
+  background: #6F6E6E;
+  border-radius: 10px;
+  transition: border-radius 400ms;
+}
+
+.nav-link {
+  display: block;
+  padding: 0 1rem;
+  text-decoration: none;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17px;
+  font-style: normal;
+  line-height: 17px;
+}
+
+@media (max-width: 375px) {
+  .nav-link {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 13px;
+    font-style: normal;
+    line-height: 14px;
+    padding: 0 8px 0 0;
+  }
+}
+
+.nav-item {
+  display: inline-flex;
+}
+
+@media (max-width: 375px) {
+  .nav-item {
+    padding: 0 5px;
+  }
+}
+
+.filter__checkbox {
+  display: none;
+}
+
+.filter__nav:hover .filter__checkbox {
+  display: block;
+  position: absolute;
+  margin: 20px 60px;
+  z-index: 1;
+}
+
+.registr {
+  height: 148px;
+  width: 100%;
+  background: #F8F3F4;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 375px) {
+  .registr {
+    flex-direction: column;
+  }
+}
+
+.registrtions__preive--catalog {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: #F16D7F;
+  padding: 60px 0 0 0;
+}
+
+@media (max-width: 375px) {
+  .registrtions__preive--catalog {
+    padding: 20px 0 0 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    margin: 0 16px 0 0;
+  }
+}
+
+@media (max-width: 375px) {
+  nav {
+    margin: 0 auto;
+  }
+}
+
+ul.grid-items__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 25px;
+  grid-row-gap: 30px;
+  list-style-type: none;
+}
+
+.grid-items__item:hover .featured-bascet {
+  display: block;
+  z-index: 1;
+}
+
+.items__item--grid {
+  background-color: #FBFBFB;
+  width: 100%;
+  position: relative;
+  list-style-type: none;
+  margin: 0 0 3%;
+}
+
+@media (max-width: 768px) {
+  .items__item--grid {
+    width: 49%;
+  }
+}
+
+@media (max-width: 375px) {
+  .items__item--grid {
+    width: auto;
+  }
 }
 /*# sourceMappingURL=style.css.map */
