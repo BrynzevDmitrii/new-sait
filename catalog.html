@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <title>New-Shop</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__wrapper container-lg">
+            <div class="header__controls">
+                <a href="index.html">
+                    <img class="header__logo" src="./img/logo.svg" alt="logo" width="44" height="38">
+                </a>
+                <img src="./img/loup.svg" alt="loup" width="26" height="27">
+
+            </div>
+            <div class="header__controls">
+                <button class="header__button">
+                    <img class="header__button__sendvich" src="./img/sendvich.svg" alt="sendvich" width="32"
+                        height="23">
+                </button>
+                <a class="header__person-link" href="Registration.html"><img class="header__person__user-img"
+                        src="./img/user.svg" alt="user" width="29" height="29"></a>
+                <a href="#"><img class="header__bascet-img" src="./img/basket.svg" alt="basket" width="32"
+                        height="29"></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="registrtions ">
+            <div class=" registr container-lg">
+                <h1 class="registrtions__preive registrtions__preive--catalog">new arrivals</h1>
+                <div class="navbar">
+                    <nav aria-label="breadcrumb ">
+                        <ol class="breadcrumb ">
+                            <li class="breadcrumb-item"><a class="link-secondary text-uppercase"
+                                    href="index.html">Home</a></li>
+                            <li class="breadcrumb-item " aria-current="page"><a class="link-secondary text-uppercase"
+                                    href="#">men</a></li>
+                            <li class="breadcrumb-item active " aria-current="page"><a
+                                    class="link-warning text-uppercase" href="#">new arrivals</a></li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+
+
+        </section>
+        <section class="filter container-lg">
+            <div class="title_wrapper">
+                <div class="filter-button border-0 bg-transparent d-inline-flex flex-column">
+                    <div class="filter__filrt">
+                        <h2 class="flter__title">filtre</h2><img class="filter__img" src="./img/filter.svg" alt="filter"
+                            width="10" height="15">
+                    </div>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header " id="flush-headingOne">
+                                <button class="accordion-button collapsed text-uppercase border-0 bg-transparent"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                    aria-expanded="false" aria-controls="flush-collapseOne">
+                                    Category
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body ">
+                                    <ul class="filter__item list-unstyled ">
+                                        <li class="filter__items"><a class="filter__items filter__items--border"
+                                                href="#">Accessories</a></li>
+                                        <li class="filter__items"><a class="filter__items filter__items--border"
+                                                href="#">Denim</a></li>
+                                        <li class="filter__items"><a class="filter__items filter__items--border"
+                                                href="#">Hoodies & Sweatshirts</a></li>
+                                        <li class="filter__items"><a class="filter__items filter__items--border"
+                                                href="#">Jackets & Coats</a></li>
+                                        <li class="filter__items"><a class="filter__items filter__items--border"
+                                                href="#">Polos</a></li>
+                                        <li class="filter__items"><a class="filter__items filter__items--border"
+                                                href="#">Shirts</a></li>
+                                        <li class="filter__items"><a class="filter__items filter__items--border"
+                                                href="#">Shoes</a></li>
+                                        <li class="filter__items"><a class="filter__items filter__items--border"
+                                                href="#">Sweaters & Knits</a></li>
+                                        <li class="filter__items"><a class="filter__items filter__items--border"
+                                                href="#">T-Shirts</a></li>
+                                        <li class="filter__items"><a class="filter__items filter__items--border"
+                                                href="#">Tanks</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed text-uppercase border-0 bg-transparent"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                    aria-expanded="false" aria-controls="flush-collapseTwo">
+                                    Brand
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <ul class="filter__item list-unstyled ">
+                                        <li class="filter__items"><a class="filter__items filter__items--border"
+                                                href="#">Accessories</a></li>
+                                        <li class="filter__items"><a class="filter__items filter__items--border"
+                                                href="#">Denim</a></li>
+                                        <li class="filter__items"><a class="filter__items filter__items--border"
+                                                href="#">Hoodies & Sweatshirts</a></li>
+                                        <li class="filter__items"><a class="filter__items filter__items--border"
+                                                href="#">Jackets & Coats</a></li>
+                                        <li class="filter__items"><a class="filter__items filter__items--border"
+                                                href="#">Polos</a></li>
+                                        <li class="filter__items"><a class="filter__items filter__items--border"
+                                                href="#">Shirts</a></li>
+                                        <li class="filter__items"><a class="filter__items filter__items--border"
+                                                href="#">Shoes</a></li>
+                                        <li class="filter__items"><a class="filter__items filter__items--border"
+                                                href="#">Sweaters & Knits</a></li>
+                                        <li class="filter__items"><a class="filter__items filter__items--border"
+                                                href="#">T-Shirts</a></li>
+                                        <li class="filter__items"><a class="filter__items filter__items--border"
+                                                href="#">Tanks</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed text-uppercase" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                    aria-expanded="false" aria-controls="flush-collapseThree">
+                                    Designer
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <ul class="filter__item list-unstyled ">
+                                        <li class="filter__items"><a class="filter__items filter__items--border"
+                                                href="#">Accessories</a></li>
+                                        <li class="filter__items"><a class="filter__items filter__items--border"
+                                                href="#">Denim</a></li>
+                                        <li class="filter__items"><a class="filter__items filter__items--border"
+                                                href="#">Hoodies & Sweatshirts</a></li>
+                                        <li class="filter__items"><a class="filter__items filter__items--border"
+                                                href="#">Jackets & Coats</a></li>
+                                        <li class="filter__items"><a class="filter__items filter__items--border"
+                                                href="#">Polos</a></li>
+                                        <li class="filter__items"><a class="filter__items filter__items--border"
+                                                href="#">Shirts</a></li>
+                                        <li class="filter__items"><a class="filter__items filter__items--border"
+                                                href="#">Shoes</a></li>
+                                        <li class="filter__items"><a class="filter__items filter__items--border"
+                                                href="#">Sweaters & Knits</a></li>
+                                        <li class="filter__items"><a class="filter__items filter__items--border"
+                                                href="#">T-Shirts</a></li>
+                                        <li class="filter__items"><a class="filter__items filter__items--border"
+                                                href="#">Tanks</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter__nav">
+                    <ul class="nav justify-content-end align-content-center mt-5">
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">Trending Now </a>
+                            <div class="nav-img"><img src="./img/down.svg"></div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">Size </a>
+                            <div class="nav-img"><img src="./img/down.svg"></div>
+                        </li>
+                        <div class="filter__checkbox">
+                            <div class="form-check ">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    xs
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                <label class="form-check-label" for="defaultCheck2">
+                                    s
+                                </label>
+                            </div>
+                            <div class="form-check ">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    m
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                <label class="form-check-label" for="defaultCheck2">
+                                    l
+                                </label>
+                            </div>
+                        </div>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">Price </a>
+                            <div class="nav-img"><img src="./img/down.svg"> </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+        <section class="grid-items container-lg mt-5">
+            <ul class="grid-items__list">
+                <li class="items__item items__item--grid">
+                    <div class="featured-bascet">
+                        <button type="button">
+                            <img class="featured-bascet__img" src="img/basket.svg" alt="featured-bascet" width="26"
+                                height="24">
+                        </button>
+                        <p class="featured-bascet__subtext">Add to Cart</p>
+                    </div>
+                    <img class="items__item-img" src="img/itemproduct1.png" alt="men-pigtail">
+                    <h3 class="items__title-product">ellery x m'o capsule</h3>
+                    <p class="items__subtitle-product">Known for her sculptural takes on traditional tailoring,
+                        Australian arbiter of cool Kym
+                        Ellery
+                        teams up with Moda Operandi.</p>
+                    <p class="items__price">$52.00</p>
+                </li>
+                <li class="items__item items__item--grid">
+                    <img class="items__item-img" src="img/blackman.jpg" alt="men-pigtail">
+                    <div class="featured-bascet">
+                        <button type="button">
+                            <img class="featured-bascet__img" src="img/basked-featured.svg" alt="featured-bascet"
+                                width="26" height="24">
+                        </button>
+                        <p class="featured-bascet__subtext">Add to Cart</p>
+                    </div>
+                    <h3 class="items__title-product">ellery x m'o capsule</h3>
+                    <p class="items__subtitle-product">Known for her sculptural takes on traditional tailoring,
+                        Australian arbiter of cool Kym Ellery
+                        teams up with Moda Operandi.</p>
+                    <p class="items__price">$52.00</p>
+                </li>
+                <li class="items__item items__item--grid">
+                    <div class="items__item-blok">
+                        <img class="items__item-img" src="img/item-product3.png" alt="men-pigtail">
+                        <div class="featured-bascet">
+                            <button type="button">
+                                <img class="featured-bascet__img" src="img/basked-featured.svg" alt="featured-bascet"
+                                    width="26" height="24">
+                            </button>
+                            <p class="featured-bascet__subtext">Add to Cart</p>
+                        </div>
+                        <h3 class="items__title-product">ellery x m'o capsule</h3>
+                        <p class="items__subtitle-product">Known for her sculptural takes on traditional tailoring,
+                            Australian arbiter of cool Kym Ellery
+                            teams up with Moda Operandi.</p>
+                        <p class="items__price">$52.00</p>
+                    </div>
+                </li>
+                <li class="items__item items__item--grid">
+                    <div class="items__item-blok">
+                        <img class="items__item-img" src="img/item-product4.png" alt="men-pigtail">
+                        <div class="featured-bascet">
+                            <button type="button">
+                                <img class="featured-bascet__img" src="img/basked-featured.svg" alt="featured-bascet"
+                                    width="26" height="24">
+                            </button>
+                            <p class="featured-bascet__subtext">Add to Cart</p>
+                        </div>
+                        <h3 class="items__title-product">ellery x m'o capsule</h3>
+                        <p class="items__subtitle-product">Known for her sculptural takes on traditional tailoring,
+                            Australian arbiter of cool Kym
+                            Ellery
+                            teams up with Moda Operandi.</p>
+                        <p class="items__price">$52.00</p>
+                    </div>
+                </li>
+                <li class="items__item items__item--grid">
+                    <div class="items__item-blok">
+                        <img class="items__item-img" src="img/smile-men.png" alt="men-pigtail">
+                        <div class="featured-bascet">
+                            <button type="button">
+                                <img class="featured-bascet__img" src="img/basked-featured.svg" alt="featured-bascet"
+                                    width="26" height="24">
+                            </button>
+                            <p class="featured-bascet__subtext">Add to Cart</p>
+                        </div>
+                        <h3 class="items__title-product">ellery x m'o capsule</h3>
+                        <p class="items__subtitle-product">Known for her sculptural takes on traditional tailoring,
+                            Australian arbiter of cool Kym Ellery
+                            teams up with Moda Operandi.</p>
+                        <p class="items__price">$52.00</p>
+                    </div>
+                </li>
+                <li class="items__item items__item--grid">
+                    <div class="items__item-blok">
+                        <img class="items__item-img" src="img/bisbol-man.png" alt="men-pigtail">
+                        <div class="featured-bascet">
+                            <button type="button">
+                                <img class="featured-bascet__img" src="img/basked-featured.svg" alt="featured-bascet"
+                                    width="26" height="24">
+                            </button>
+                            <p class="featured-bascet__subtext">Add to Cart</p>
+                        </div>
+                        <h3 class="items__title-product">ellery x m'o capsule</h3>
+                        <p class="items__subtitle-product">Known for her sculptural takes on traditional tailoring,
+                            Australian arbiter of cool Kym Ellery
+                            teams up with Moda Operandi.</p>
+                    </div>
+                    <p class="items__price">$52.00</p>
+                </li>
+                <li class="items__item items__item--grid">
+                    <div class="items__item-blok">
+                        <img class="items__item-img" src="img/product7.png" alt="men-pigtail">
+                        <div class="featured-bascet">
+                            <button type="button">
+                                <img class="featured-bascet__img" src="img/basked-featured.svg" alt="featured-bascet"
+                                    width="26" height="24">
+                            </button>
+                            <p class="featured-bascet__subtext">Add to Cart</p>
+                        </div>
+                        <h3 class="items__title-product">ellery x m'o capsule</h3>
+                        <p class="items__subtitle-product">Known for her sculptural takes on traditional tailoring,
+                            Australian arbiter of cool Kym
+                            Ellery
+                            teams up with Moda Operandi.</p>
+                        <p class="items__price">$52.00</p>
+                    </div>
+                </li>
+                <li class="items__item items__item--grid">
+                    <div class="items__item-blok">
+                        <img class="items__item-img" src="img/product8.png" alt="men-pigtail">
+                        <div class="featured-bascet">
+                            <button type="button">
+                                <img class="featured-bascet__img" src="img/basked-featured.svg" alt="featured-bascet"
+                                    width="26" height="24">
+                            </button>
+                            <p class="featured-bascet__subtext">Add to Cart</p>
+                        </div>
+                        <h3 class="items__title-product">ellery x m'o capsule</h3>
+                        <p class="items__subtitle-product">Known for her sculptural takes on traditional tailoring,
+                            Australian arbiter of cool Kym Ellery
+                            teams up with Moda Operandi.</p>
+                        <p class="items__price">$52.00</p>
+                    </div>
+                </li>
+                <li class="items__item items__item--grid">
+                    <div class="items__item-blok">
+                        <img class="items__item-img" src="img/product9.png" alt="men-pigtail">
+                        <div class="featured-bascet">
+                            <button type="button">
+                                <img class="featured-bascet__img" src="img/basked-featured.svg" alt="featured-bascet"
+                                    width="26" height="24">
+                            </button>
+                            <p class="featured-bascet__subtext">Add to Cart</p>
+                        </div>
+
+                        <h3 class="items__title-product">ellery x m'o capsule</h3>
+                        <p class="items__subtitle-product">Known for her sculptural takes on traditional tailoring,
+                            Australian arbiter of cool Kym Ellery
+                            teams up with Moda Operandi.</p>
+                    </div>
+                    <p class="items__price">$52.00</p>
+                </li>
+            </ul>
+
+        </section>
+        <div class="all">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination pb-5 pt-3">
+                    <li class="page-item"><a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true"><img src="./img/arrowback.png" width="8" height="14"></span>
+                        </a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                    <li class="page-item"><a class="page-link" href="#">6</a></li>...
+                    <li class="page-item"><a class="page-link" href="#">20</a></li>
+                    <li class="page-item"><a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true"><img src="./img/arrownext.png " width="8" height="14"></span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <section class="differences">
+            <div class="differences container">
+                <div class="differences__block differences__block--delivery">
+                    <img class="deliveryimg" src="img/deliverycar.svg" alt="deliverycar" width="45" height="32">
+                    <h3 class="differences__title">Free Delivery</h3>
+                    <div class="differences__block-differens-box">
+                        <p class="differences__subtitle">Worldwide delivery on all. Authorit tively morph
+                            next-generation innov tion with extensive models.</p>
+                    </div>
+                </div>
+                <div class="differences__block differences__block--sales">
+                    <img class="deliveryimg" src="img/sales.svg" alt="sales" width="40" height="40">
+                    <h3 class="differences__title">Sales & discounts</h3>
+                    <div class="differences__block-differens-box">
+                        <p class="differences__subtitle">Worldwide delivery on all. Authorit tively morph
+                            next-generation innov tion with extensive models.</p>
+                    </div>
+                </div>
+                <div class="differences__block differences__block--quality">
+                    <img class="deliveryimg" src="img/quality.svg" alt="quality" width="47" height="35">
+                    <h3 class="differences__title">Quality assurance</h3>
+                    <div class="differences__block-differens-box">
+                        <p class="differences__subtitle">Worldwide delivery on all. Authorit tively morph
+                            next-generation innov tion with extensive models.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="subscribe">
+            <div class="subscribe__women">
+                <img class="womansub" src="img/womansubscribe.svg" alt="woman" width="145" height="150">
+                <p class="subscribe__title-women">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar
+                    purus condimentum“</p>
+            </div>
+            <div class="subscribe__seach">
+                <h3 class="subscribe__title">subsscribe</h3>
+                <p class="subscribe__subtitle">for our newletter snd promotion</p>
+                <form class="subscribe__batton">
+                    <input class="subscribe__polevvoda" type="text" placeholder="Enter Your Email">
+                    <input class="subscribe__type" type="submit" value="Subscribe">
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer-block">
+        <p class="footer-block__copyrat">© 2021 Brand All Rights Reserved.</p>
+        <div class="social">
+            <div class="social-buttn">
+                <img class="social-buttn__patterns" src="img/facebook.svg" alt="facebook" width="32" height="32"></div>
+            <div class="social-buttn">
+                <img class="social-buttn__patterns" src="img/instagram.svg" alt="instagram" width="32" height="32"></div>
+            <div class="social-buttn">
+                <img class="social-buttn__patterns" src="img/pinterist.svg" alt="pintarist" width="32"
+                    height="32"></div>
+            <div class="social-buttn">
+                <img class="social-buttn__patterns" src="img/twiter.svg" alt="twiter" width="32" height="32">
+            </div>
+        </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

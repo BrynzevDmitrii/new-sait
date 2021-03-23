@@ -3,7 +3,10 @@
     width: 100%;
     background: #F8F3F4;
     display: flex;
-    justify-content: space-around;
+    @include mobile {
+        flex-direction: column;
+    }
+
 }
 .registrtions__preive {
     font-size: 24px;
@@ -11,10 +14,11 @@
     line-height: 29px;
     text-transform: uppercase;
     color: $rosered;
-    padding:60px 0 0 230px;
+    padding:60px 0 0 130px;
 
     @include tablet{
         padding: 60px 0 0 16px;
+        justify-content: space-between;
     }
     
     @include mobile{
